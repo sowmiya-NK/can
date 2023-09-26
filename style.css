@@ -1,9 +1,9 @@
-body{
+body {
   max-width: 1400px;
   padding: 15px;
   overflow-x: hidden;
 }
-.main{
+.main {
   width: 100%;
 }
 
@@ -14,68 +14,68 @@ body{
   border: 1px solid rgb(244, 238, 238);
   padding: 15px;
   border-width: 4px;
- 
 }
 #menu {
   display: flex;
-  flex-grow: 8;
+  /* flex-grow: 5; */
   margin-left: 35px;
   justify-content: space-around;
 }
-#input[type=search]
-{ 
-  background: transparent;
-  margin: 0;
-  padding: 7px 8px;
-  font-size: 15px;
-  /* color: inherit; */
-  border: none;
-  
-  border-radius: 2px;
-  margin-top: 5pt;
-  
- 
-}
-#input>img{
-  border: 1px solid gainsboro;
-  height: 20px;
-  width: 20px;
 
+#menu > .select {
+  margin-left: 35px;
+  display: flex;
+  border: none;
 }
-#head>#button>button {
+input[type="search"] {
+  width: 23%;
+  /* margin-top: 30px; */
+  /* flex-grow: 3; */
+  padding-left: 7px;
+  border-radius: 2px;
+  border-color: rgb(241, 236, 236);
+}
+
+#head > button {
   width: 70px;
-  height: 50px;
+  height: 40px;
   align-items: center;
   background-color: rgb(136, 109, 253);
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 80px;
+  border: none;
   /* margin-left: 400px; */
 }
+#head > #button1 {
+  background-color: rgb(247, 247, 247);
+}
 
-#home>#homecontent>h3{
+#home > #homecontent > h3 {
   margin-top: 3%;
   font-size: 3.8rem;
   line-height: 6.4rem;
   margin-bottom: none;
-
 }
- #home>#homecontent>p{
-  font-size:20px;
-  margin-top:2px;
+#home > #homecontent > p {
+  font-size: 20px;
+  margin-top: 2px;
   color: rgb(136, 139, 142);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- }
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
- #homecontent>button{
+#homecontent > button {
   background-color: rgb(136, 109, 253);
-  padding:10px;
-  width: 10%;
-  border-radius: 10px;
-  color:white;
- }
+  padding: 6px;
+  width: 14%;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  height: 30px;
+}
 .color {
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(90deg,#00c4cc,#7d2ae8);
+  background-image: linear-gradient(90deg, #00c4cc, #7d2ae8);
   color: transparent;
   font-style: normal;
 }
@@ -85,24 +85,24 @@ body{
   justify-content: space-evenly;
   margin: 20px;
 }
-.slide>img{
+.slide > img {
   margin-top: 20px;
   height: 300px;
   width: 200px;
   padding: 10px;
   /* display: flex; */
   justify-content: space-evenly;
- border-radius: 30px;
+  border-radius: 30px;
 }
 
-.container>h1{
+.container > h1 {
   margin-top: 10%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 40px;
 }
-.container>p{
-  margin-top: 10%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.container > p {
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
 }
 #but2 {
@@ -115,7 +115,7 @@ body{
 
 #layer1 {
   display: flex;
-
+  margin-top: auto;
   border: 1px solid rgba(0, 0, 0, 0.511);
   flex-direction: column;
   width: 400px;
@@ -128,8 +128,8 @@ body{
 }
 #layer2 {
   display: flex;
-
-  border:1px solid rgba(0, 0, 0, 0.511);
+  margin-top: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.511);
   flex-direction: column;
   width: 400px;
   height: 270px;
@@ -140,22 +140,21 @@ body{
   border-radius: 15px;
 }
 
-#layer2>h2{
+#layer2 > h2 {
   margin-top: 1px;
-  
 }
 
-#layer1>h2{
-  margin-top: 25pt;
+#layer1 > h2 {
+  margin-top: 1px;
 }
 
-#layer3>h2{
-  margin-top: 40pt;
+#layer3 > h2 {
+  margin-top: 1px;
 }
 #layer3 {
   display: flex;
   padding: 20px;
-  border:1px solid rgba(0, 0, 0, 0.438);;
+  border: 1px solid rgba(0, 0, 0, 0.438);
   flex-direction: column;
   width: 400px;
   height: 270px;
@@ -163,9 +162,10 @@ body{
   text-align: left;
   border-radius: 15px;
   align-items: center;
+  margin-top: 3px;
 }
 
-#about>div>button{
+#about > div > button {
   background-color: rgb(136, 109, 253);
   border-radius: 2%;
   border: none;
@@ -174,23 +174,42 @@ body{
   width: 300px;
   height: 50px;
   font-size: 17px;
-  
 }
-#layer1>button{
-  margin-top: 50px;
-  height: 25px;
-  width: 2px;
+#layer1 > button{
+  margin-top: 30px;
+  height: 30px;
+  width: 300px;
+  border-radius: 2px;
 }
 
-#layer2>button{
-  margin-top: 50px;
+#layer2 > button {
+  margin-top: 30px;
+  height: 35px;
+  width: 300px;
+  border-radius: 2px;
 }
-#layer3>button{
-  margin-bottom: 10px;
-  height: 50px;
 
+#layer3 > button {
+  margin-top: 30px;
+
+  height: 35px;
+  width: 300px;
+  border-radius: 2px;
 }
-h3{
+
+#layer2 > .button2 {
+  background-color: transparent;
+}
+#layer3 > .button2 {
+  border: none;
+  background-color: rgb(233, 228, 228);
+  color: black;
+  height: 35px;
+  width: 300px;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+h3 {
   font-size: 25px;
 }
 
@@ -207,15 +226,14 @@ h2 {
   display: flex;
 }
 
-#sideview  {
+.sideview {
   display: flex;
   /* flex-direction: row; */
-  padding: 100px;
+
   /* margin-left: 50px;  */
   justify-content: space-evenly;
-  
 }
-#sideview>img{
+.sideview > img {
   height: 300px;
   width: 450px;
 }
@@ -225,60 +243,56 @@ h2 {
   width: 100%;
   padding: 50px;
   margin-left: 50px;
-
 }
 #slide {
   display: flex;
+  justify-content: space-evenly;
 }
 #img {
   display: flex;
   /* height: 300px;
     width: 300px; */
+  justify-content: center;
 }
 figcaption {
   margin-top: 3px;
 }
 #footer {
   display: flex;
-  justify-content: space-around;
-  background-color:grey;
+  justify-content: space-evenly;
+  background-color: grey;
 }
-.container>h2{
+.container > h2 {
   margin-top: 90px;
   font-size: 45px;
 }
-#template>h2{
+#template > h2 {
   font-size: 45px;
 }
-.b2{
+.b2 {
   display: flex;
   justify-content: center;
- 
 }
-.b2>button{
+.b2 > button {
   background-color: rgb(236, 232, 232);
   text-align: center;
   padding: 10px;
   font-size: bold;
   border: none;
-
 }
-.container>p{
+.container > p {
   text-align: center;
 }
 
-#sideview>#text>h3{
-  margin-top: 20px;
+.sideview > .text > h3 {
   font-size: 30px;
 }
 
-
-#sideview>#text>p{
+.sideview > .text > p {
   font-size: 20px;
 }
 
-
-#sideview>#text>button{
+.sideview > .text > button {
   border-radius: 2px;
   height: 30px;
   width: 200px;
@@ -286,21 +300,21 @@ figcaption {
   box-shadow: gray;
 }
 
-.button123{
+.button123 {
   align-items: center;
   /* margin-top: 10px; */
   width: 600px;
   height: 300px;
   margin-left: 50%;
 }
-.container>h2{
+.container > h2 {
   margin-top: 5px;
 }
 
-.container{
+.container {
   margin-top: 4px;
 }
 
-#select{
+#select {
   border: none;
 }
